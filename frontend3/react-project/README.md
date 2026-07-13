@@ -1,8 +1,69 @@
-# React + Vite
+# Pakclassified
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack CRUD application with user authentication, built using the MERN stack while learning full-stack web development.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- User signup and login with JWT-based authentication
+- Create, read, update, and delete items
+- RESTful API built with Express and Node.js
+- MongoDB database for persistent storage
+- React (Vite) frontend for a fast, responsive user interface
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+- **Frontend:** React, Vite
+- **Backend:** Node.js, Express
+- **Database:** MongoDB
+- **Authentication:** JWT
+
+## 📖 About This Project
+This project was built as a hands-on learning exercise to practice full-stack development — implementing user authentication, connecting a React frontend to a Node/Express backend, and managing data with MongoDB.
+
+## ⚙️ Getting Started
+
+### Prerequisites
+- Node.js installed
+- MongoDB running locally (or update the connection string to use MongoDB Atlas)
+
+### Installation
+
+Clone the repository:
+```bash
+git clone https://github.com/areeba-dev-eng/pakclassified.git
+```
+
+Install backend dependencies:
+```bash
+cd backend3
+npm install
+```
+
+Install frontend dependencies:
+```bash
+cd ../frontend3/react-project
+npm install
+```
+
+### Environment Variables
+Create a `.env` file inside the `backend3` folder with the following:
+CON_STR=mongodb://localhost:27017/project
+HOST=localhost
+PORT=5000
+JWT_SECRET_KEY=your_secret_key_here
+JWT_TOKEN_HEADER=X-Auth-Token
+
+### Running the App
+
+Start the backend:
+```bash
+cd backend3
+npm start
+```
+
+Start the frontend (in a new terminal):
+```bash
+cd frontend3/react-project
+npm run dev
+```
+
+## 👩‍💻 Author
+**Areeba Afzal**
